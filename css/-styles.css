@@ -1,0 +1,546 @@
+/* resetear configuración predeterminada del navegador*/
+*{
+  padding: 0 px;
+  margin:0 px;
+  box-sizing: border-box;
+}
+
+/*Color fondo paginas*/
+body {
+  height: 100vh;
+  background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);;
+ }
+
+ /*HEADER ALL PAGES*/
+
+.banner-envio
+ {
+  text-align:center;
+  background-color: rgb(159, 249, 118);
+  height: 40px;
+  }
+ 
+ .info-envio
+ {
+  width: 60%;
+ }
+
+ /*Formato para la barra de navegación*/
+
+ .formato .formato2 {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formato {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.formato2 {
+  font-size: 12.5px;
+  }
+
+/*PRODUCTOS DESTACADOS*/
+
+.prod-destacados {
+  font-size: 32px;
+  letter-spacing: 1.3px;
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 1rem;
+}
+
+.prod-destacados:hover {
+  text-shadow: -2px -2px 10px #fff,
+              2px 2px 10px #fff,
+              0 0 20px #D2DE32,
+              0 0 40px #D2DE32,
+              0 0 60px #D2DE32,
+              0 0 80px #D2DE32,
+              0 0 100px #D2DE32;
+  box-shadow: 0 0 5px #fff,
+              inset 0 0 5px #fff,
+              0 0 20px #08f,
+              inset 0 0 20px #08f,
+              0 0 40px #08f,
+              inset 0 0 40px #08f,
+}
+
+.products-grid {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  row-gap: 10px;
+} 
+
+.product-wrapper {
+  position: relative;
+}
+
+.product-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 200px;
+  height: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.product-items .product-item-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: var(--background);
+  transition: .5s;
+}
+
+.product-item-image img {
+  height: 100%;
+  width: 100%;
+  object-fit:fill;
+}
+
+.product-items:hover img {
+  opacity: 0.4;
+  transition: .5s;
+}
+
+.product-items:hover .product-item-image {
+  transform: translateY(-104px);
+  transition: all .9s;
+}
+
+.product-items:hover .item-info-bio {
+  opacity: 0.9;
+  align-content: center;
+}
+
+.item-info-bio {
+  color: darkblue;
+  margin: 0%;
+}
+
+.item-info-bio h3{
+  font-size: 14px;
+  color: darkblue;
+  margin: 0%;
+}
+
+#item-info-sku{
+  font-size: 12px;
+  color: darkslateblue;
+  margin: 0%;
+}
+
+.product-items:hover  {
+  transition-delay: 0.1s;
+}
+
+.product-items:hover  {
+  transition-delay: 0.2s;
+}
+
+.product-items:hover  {
+  transition-delay: 0.3s;
+}
+
+.product-items:hover{
+  transition-delay: 0.4s;
+}
+
+.product-item-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  background: var(--background);
+  width: 100%;
+  height: 104px;
+  padding: 16px;
+  z-index: 1;
+  color: #333;
+  text-align: center;
+}
+
+.product-items:hover .product-item-info {
+  background-color: #fff;
+}
+
+.product-item-info h2 {
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+
+
+hr {
+  border-top: 3px solid rgb(162,210,255);
+  height: 2px;
+  max-width: 100%;
+  margin: 1em;
+}
+
+.outlet {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.img-wrapper {
+  max-width: 100%;
+  height: 65vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 285px;
+  }
+  
+  @media screen and (min-width: 516px)
+  {
+    .carousel-inner {
+      display: flex;    
+    }
+  
+    .carousel-item {
+      display: block;
+      margin-right: 0;
+      flex: 0 0  calc(100%/4);
+    }
+  
+    .img-wrapper {
+        height: 23vw;
+      }
+  }
+  
+  .carousel-inner{
+    padding: 1 rem;
+  }
+  
+  .card {
+    width: 350px;
+    padding: 1rem;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0,0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+
+  .card:hover {
+    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+    transform: translatey(-3%);
+  }
+  
+  .card .card-body{
+    padding: 15px;
+    text-align: center;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+.card .card-body p{
+  line-height: 1.5;
+  color: black;
+}
+
+.card .card-body .card-title .c-text .card-othertitle {
+  margin-bottom: 15px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+.infotienda h3, #infot, p{
+  text-align: center;
+  font-size: 12.5px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 0px;
+}
+
+.infotienda p {
+    text-align: justify;
+    margin: 1rem;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+ }
+
+/*footer nav h4 {
+  text-align: left;
+  margin: 0;
+}*/
+
+#titulo {
+  display:flex;
+  text-transform: uppercase;
+  font-size: 13.5px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: justify;
+}
+
+.opciones .lista{
+  list-style: none;
+  align-items:normal;
+  text-transform:initial;
+  }
+
+.opciones li h3 a{
+  text-decoration: none;
+}
+.opciones li h3 a span{
+  font-size: 12.5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+.redes, #redes{
+text-align: right;
+font-size: 12px;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.insta, .faceb, .natura-1, .gotrendier{
+  width: 24px;
+  height: 24px;
+}
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.derechos {
+  letter-spacing: 1.2px;
+  text-align: center;
+  font-size: 10.5px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*ROPA*/
+.produc {
+  margin: 10px;
+}
+
+.produc h2 {
+  font-size: 20px;
+  letter-spacing: 1.3px;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.item-page {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/*PAGE CONVERSEMOS*/
+
+#t-contacto {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 1rem;
+}
+
+.text-contacto1 {
+  color: #4242f4;
+  border: 4px solid #fff;
+  padding: 30px 70px;
+  width: fit-content;
+  margin: 3 rem auto;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: italic; 
+  font-family: 'Ubuntu', sans-serif;
+  transition: text-shadow 0.5s, box-shadow 0.5s;
+
+
+}
+
+/* Animacion opciones footer */
+.link-1:hover {
+  text-shadow: -2px -2px 10px #fff,
+              2px 2px 10px #fff,
+              0 0 20px #C63D2F,
+              0 0 40px #C63D2F,
+              0 0 60px #C63D2F,
+              0 0 80px #C63D2F,
+              0 0 100px #C63D2F;
+  box-shadow: 0 0 5px #fff,
+              inset 0 0 5px #fff,
+              0 0 20px #08f,
+              inset 0 0 20px #08f,
+              0 0 40px #08f,
+              inset 0 0 40px #08f,
+}
+
+.text-contacto {
+  text-align: center;
+  font-size: 14px;  
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0.5rem;
+}
+.cont-campos, #cont-mensaje{
+  font-size: 14px;  
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.form-group, .text-cont {
+  margin: 6px 0px;
+  padding: 5px 20 px;  
+}
+
+.cont-campos {
+  width: 40%;
+}
+.marco {
+  border-color:blueviolet;
+  border-radius: 5px;
+}
+
+
+ /*PAGE GUIA DE TALLAS*/
+
+ .gtallas {
+  margin: 0 auto;
+  justify-content: space-around;
+ }
+
+   .g-medidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    }
+ 
+   .g-medidas div h1{
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+   }
+
+   .tomar-medidas li h3 {
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+   }
+
+  #tg-medidas {
+    font-size: 13px;
+    text-align: justify;
+    padding-right: 15px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .notas {
+    font-size: 12px;
+    text-align: justify;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  .notas ul {
+    list-style: none;
+    text-align: justify;
+  }
+
+  .notas span {
+    padding: 4px;
+  }
+
+  .video {
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+  }
+
+/*Para tablet que tengan como minimo 460px*/
+@media screen and (max-width: 460px) {
+  body{
+    background-color: honeydew;
+  }
+
+  .banner-envio .info-envio {
+    width: 460px;
+    height: 50px;
+  }
+  
+ .products-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+ }
+ 
+ #img-corazon  {
+  display: none;
+ }
+
+ hr {
+  border-top: 4px solid rgb(76, 167, 251);
+  height: 2px;
+  margin: 1em;
+}
+
+.outlet {
+  width: 440px;
+}
+
+.card{
+  width: 350px;
+  justify-self: center;
+  margin: 3rem;
+}
+
+.footer-column{
+  display: grid;
+  margin: 1rem;
+}
+
+.medios
+{
+  width: 90%;
+  margin: 1rem;
+}
+
+#titulo{
+font-size: 12px;
+}
+
+.redes
+{ display: grid;
+  gap: 8px;
+  margin: 1rem;
+}
+
+.derechos{
+  font-size: 8px;
+}
+
+.marco {
+padding: 1rem;
+}
+
+#cont-mensaje {
+  width: 90%;
+
+}
+
+}

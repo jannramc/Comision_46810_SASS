@@ -1,0 +1,362 @@
+* {
+  padding: 0 px;
+  margin: 0 px;
+  box-sizing: border-box; }
+
+/*Nesting page ppal*/
+header {
+  height: 100vh;
+  background: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%); }
+  header .banner-envio {
+    text-align: center;
+    background-color: #9ff976;
+    height: 40px; }
+    header .banner-envio .info-envio {
+      width: 60%; }
+  @media screen and (max-width: 460px) {
+    header .banner-envio .info-envio {
+      width: 460px;
+      height: 50px; } }
+  header .container_fluid .navbar .container-fluid .collapse .navbar-nav .formato {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 14px;
+    font-weight: bold; }
+  header .container_fluid .navbar .container-fluid .collapse .navbar-nav .dropdown-menu li .formato2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12.5px; }
+
+main {
+  /* fomato de OUTLET*/ }
+  main .prod-destacados {
+    color: blueviolet;
+    font-size: 32px;
+    letter-spacing: 1.3px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 1rem; }
+  main .products:hover {
+    text-shadow: -2px -2px 10px #fff, 2px 2px 10px #fff, 0 0 20px #D2DE32, 0 0 40px #D2DE32, 0 0 60px #D2DE32, 0 0 80px #D2DE32, 0 0 100px #D2DE32;
+    box-shadow: 0 0 5px #fff, inset 0 0 5px #fff, 0 0 20px #08f, inset 0 0 20px #08f, 0 0 40px #08f, inset 0 0 40px #08f; }
+  main .products-grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 10px; }
+    main .products-grid .product-wrapper {
+      position: relative; }
+      main .products-grid .product-wrapper .product-items {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        width: 200px;
+        height: 300px;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+        cursor: pointer;
+        transition: 0.5s; }
+        main .products-grid .product-wrapper .product-items .product-item-image {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          background-color: var(--background);
+          transition: .5s; }
+          main .products-grid .product-wrapper .product-items .product-item-image a img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill; }
+        main .products-grid .product-wrapper .product-items .product-item-info {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          z-index: 3;
+          background: var(--background);
+          width: 100%;
+          height: 104px;
+          padding: 16px;
+          z-index: 1;
+          color: #333;
+          text-align: center; }
+          main .products-grid .product-wrapper .product-items .product-item-info h2 {
+            margin-bottom: 6px;
+            font-size: 18px; }
+          main .products-grid .product-wrapper .product-items .product-item-info .item-info-bio {
+            color: darkblue;
+            margin: 0%; }
+            main .products-grid .product-wrapper .product-items .product-item-info .item-info-bio h3 {
+              font-size: 14px;
+              color: darkblue;
+              margin: 0%; }
+            main .products-grid .product-wrapper .product-items .product-item-info .item-info-bio #item-info-sku {
+              font-size: 12px;
+              color: darkslateblue;
+              margin: 0%; }
+      main .products-grid .product-wrapper .product-items:hover {
+        transition-delay: 0.1s; }
+      main .products-grid .product-wrapper .product-items:hover {
+        transition-delay: 0.2s; }
+      main .products-grid .product-wrapper .product-items:hover {
+        transition-delay: 0.3s; }
+      main .products-grid .product-wrapper .product-items:hover {
+        transition-delay: 0.4s; }
+      main .products-grid .product-wrapper .product-items:hover img {
+        opacity: 0.4;
+        transition: .5s; }
+      main .products-grid .product-wrapper .product-items:hover .product-item-image {
+        transform: translateY(-104px);
+        transition: all .9s; }
+      main .products-grid .product-wrapper .product-items:hover .product-item-info {
+        background-color: #fff; }
+      main .products-grid .product-wrapper .product-items:hover .item-info-bio {
+        opacity: 0.9;
+        align-content: center; }
+    @media screen and (max-width: 460px) {
+      main .products-grid .products-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        padding: 1rem; } }
+  main hr {
+    border-top: 3px solid #a2d2ff;
+    height: 2px;
+    max-width: 100%;
+    margin: 1em; }
+  @media screen and (max-width: 460px) {
+    main hr {
+      border-top: 4px solid #4ca7fb;
+      height: 2px;
+      margin: 1em; } }
+  main .outle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem; }
+  @media screen and (max-width: 460px) {
+    main .outlet {
+      width: 440px; } }
+  main .carouselIndicatorsOutlet .carousel-inner {
+    padding: 1 rem; }
+    main .carouselIndicatorsOutlet .carousel-inner .carousel-item .card:hover {
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+      transform: translatey(-3%); }
+    main .carouselIndicatorsOutlet .carousel-inner .carousel-item .card {
+      width: 350px;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+      cursor: default;
+      transition: all 400ms ease;
+      margin-bottom: 15px;
+      font-size: 12px;
+      text-align: justify; }
+      main .carouselIndicatorsOutlet .carousel-inner .carousel-item .card .img.wrapper {
+        max-width: 100%;
+        height: 65vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; }
+      main .carouselIndicatorsOutlet .carousel-inner .carousel-item .card .card-body {
+        padding: 15px;
+        text-align: center;
+        font-family: 'Ubuntu', sans-serif;
+        margin-bottom: 15px;
+        font-size: 12px;
+        text-align: justify; }
+        main .carouselIndicatorsOutlet .carousel-inner .carousel-item .card .card-body .card-title {
+          margin-bottom: 15px;
+          font-size: 12px;
+          text-align: justify; }
+        main .carouselIndicatorsOutlet .carousel-inner .carousel-item .card .card-body .card-othertitle {
+          margin-bottom: 15px;
+          font-size: 12px;
+          text-align: justify; }
+        main .carouselIndicatorsOutlet .carousel-inner .carousel-item .card .card-body .c-text {
+          line-height: 1.5;
+          color: black;
+          margin-bottom: 15px;
+          font-size: 12px;
+          text-align: justify; }
+    @media screen and (max-width: 460px) {
+      main .carouselIndicatorsOutlet .carousel-inner .carousel-item .card {
+        width: 350px;
+        justify-self: center;
+        margin: 3rem; } }
+  main .infotienda h3 {
+    text-align: center;
+    font-size: 12.5px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px; }
+  main .infotienda #infot {
+    text-align: center;
+    font-size: 12.5px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px; }
+  main .infotienda p {
+    text-align: center;
+    font-size: 12.5px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0px;
+    text-align: justify;
+    margin: 1rem; }
+
+footer .footer-column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  footer .footer-column div #titulo {
+    display: flex;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: justify; }
+  footer .footer-column .opciones {
+    list-style: none;
+    align-items: normal;
+    text-transform: initial; }
+    footer .footer-column .opciones .listas {
+      list-style: none;
+      align-items: normal;
+      text-transform: initial; }
+      footer .footer-column .opciones .listas li .link-1 {
+        text-shadow: -2px -2px 10px #fff, 2px 2px 10px #fff, 0 0 20px #C63D2F, 0 0 40px #C63D2F, 0 0 60px #C63D2F, 0 0 80px #C63D2F, 0 0 100px #C63D2F;
+        box-shadow: 0 0 5px #fff, inset 0 0 5px #fff, 0 0 20px #08f, inset 0 0 20px #08f, 0 0 40px #08f, inset 0 0 40px #08f; }
+        footer .footer-column .opciones .listas li .link-1 a {
+          text-decoration: none; }
+          footer .footer-column .opciones .listas li .link-1 a span {
+            font-size: 12px;
+            font-family: 'Ubuntu', sans-serif; }
+  footer .footer-column .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    footer .footer-column .redes .medios {
+      width: 90%;
+      margin: 1rem; }
+    @media screen and (max-width: 460px) {
+      footer .footer-column .redes .medios {
+        width: 90%;
+        margin: 1rem; } }
+    footer .footer-column .redes div #redes {
+      text-align: right;
+      font-size: 12px;
+      font-family: 'Ubuntu', sans-serif; }
+    footer .footer-column .redes div a .faceb {
+      width: 34px;
+      height: 34px; }
+    footer .footer-column .redes div a .natura-1 {
+      width: 34px;
+      height: 34px; }
+    footer .footer-column .redes div a .gotrendier {
+      width: 34px;
+      height: 34px; }
+    footer .footer-column .redes div a .insta {
+      width: 34px;
+      height: 34px; }
+  footer .footer-column section .derechos {
+    letter-spacing: 1.2px;
+    text-align: center;
+    font-size: 10.5px;
+    font-family: 'Ubuntu', sans-serif; }
+  @media screen and (max-width: 460px) {
+    footer .footer-column .redes {
+      display: grid;
+      gap: 8px;
+      margin: 1rem; }
+    footer .footer-column .derechos {
+      font-size: 8px; } }
+
+@media screen and (max-width: 460px) {
+  footer .footer-column {
+    display: grid;
+    margin: 1rem; } }
+
+/*page moda_dama*/
+main .produc {
+  margin: 10px; }
+  main .produc .item-page {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+
+/*page conversemos*/
+main div #t-contacto {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 1rem; }
+
+main section .text-contacto1 {
+  color: #4242f4;
+  border: 4px solid #fff;
+  padding: 30px 70px;
+  width: fit-content;
+  margin: 3 rem auto;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: 'Ubuntu', sans-serif;
+  transition: text-shadow 0.5s, box-shadow 0.5s; }
+
+main section form legend .text-contacto {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0.5rem; }
+
+main section form .marco {
+  border-color: blueviolet;
+  border-radius: 5px; }
+  main section form .marco .form-group {
+    margin: 6px 0px;
+    padding: 5px 20 px;
+    margin: 6px 0px;
+    padding: 5px 20 px; }
+    main section form .marco .form-group .cont-campos {
+      width: 40%; }
+
+/*page gtallas*/
+main .g-medidas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  main .g-medidas div h1 {
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif; }
+  main .g-medidas div .tomar-medidas li h3 {
+    font-size: 15px;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif; }
+  main .g-medidas div .tomar-medidas li #tg-medidas {
+    font-size: 13px;
+    text-align: justify;
+    padding-right: 15px;
+    font-family: 'Ubuntu', sans-serif; }
+
+main .gtallas {
+  margin: 0 auto;
+  justify-content: space-around; }
+
+main .notas {
+  font-size: 12px;
+  text-align: justify;
+  font-family: 'Ubuntu', sans-serif; }
+  main .notas span ul {
+    list-style: none;
+    text-align: justify; }
+    main .notas span ul span {
+      padding: 4px; }
+
+main div video {
+  margin: 0 auto;
+  display: block;
+  padding: 20px; }

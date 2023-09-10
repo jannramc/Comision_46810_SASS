@@ -1,0 +1,431 @@
+ // llamar archivos partials
+@import "reset";
+@import "variables";
+
+
+/*Nesting page ppal*/
+  header{
+        height: 100vh;
+        background: $color-fondo;
+        .banner-envio {
+            text-align:center;
+            background-color: $color-env;
+            height: 40px;
+            .info-envio {
+                width: 60%;
+            }
+            
+        }
+        @media screen and (max-width: 460px) {
+            .banner-envio .info-envio {
+                width: 460px;
+                height: 50px;
+              }
+        }
+        .container_fluid{
+            .navbar {
+                .container-fluid{
+                    .collapse {
+                        .navbar-nav {
+                            .formato {
+                                font-family: 'Ubuntu', sans-serif;
+                                font-size: 14px;
+                                font-weight: bold;
+                                }
+                            .dropdown-menu {
+                                li {
+                                    .formato2 {
+                                        font-family: 'Ubuntu', sans-serif;
+                                        font-size: 12.5px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            
+            }
+    }
+
+    main {
+        .prod-destacados {
+            color: blueviolet;
+            font-size: 32px;
+            letter-spacing: 1.3px;
+            text-align: center;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 1rem;
+            }
+
+        .products:hover {
+            text-shadow: -2px -2px 10px #fff,
+                        2px 2px 10px #fff,
+                        0 0 20px #D2DE32,
+                        0 0 40px #D2DE32,
+                        0 0 60px #D2DE32,
+                        0 0 80px #D2DE32,
+                        0 0 100px #D2DE32;
+            box-shadow: 0 0 5px #fff,
+                        inset 0 0 5px #fff,
+                        0 0 20px #08f,
+                        inset 0 0 20px #08f,
+                        0 0 40px #08f,
+                        inset 0 0 40px #08f,
+            }
+
+        .products-grid {
+            margin: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            row-gap: 10px;
+            .product-wrapper {
+                position: relative;
+                .product-items {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    overflow: hidden;
+                    width: 200px;
+                    height: 300px;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+                    cursor: pointer;
+                    transition: 0.5s;
+                    .product-item-image {
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        width: 100%;
+                        height: 100%;
+                        z-index: 2;
+                        background-color: var(--background);
+                        transition: .5s;
+                        a { 
+                            img {
+                                height: 100%;
+                                width: 100%;
+                                object-fit:fill;
+                                }
+                            }
+                        }
+                    .product-item-info {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 3;
+                        background: var(--background);
+                        width: 100%;
+                        height: 104px;
+                        padding: 16px;
+                        z-index: 1;
+                        color: #333;
+                        text-align: center;
+                        h2 {
+                            margin-bottom: 6px;
+                            font-size: 18px
+                            }
+                        .item-info-bio{
+                            color: darkblue;
+                            margin: 0%;
+                            h3 {
+                                font-size: 14px;
+                                color: darkblue;
+                                margin: 0%;
+                                }
+                            #item-info-sku {
+                                font-size: 12px;
+                                color: darkslateblue;
+                                margin: 0%;
+                                }
+                            }
+                    }
+                }
+                .product-items:hover  {
+                    transition-delay: 0.1s;
+                    }
+                .product-items:hover  {
+                    transition-delay: 0.2s;
+                    }
+                .product-items:hover  {
+                    transition-delay: 0.3s;
+                    }
+                .product-items:hover{
+                    transition-delay: 0.4s;
+                    }
+                .product-items:hover img {
+                    opacity: 0.4;
+                    transition: .5s;
+                    }
+                .product-items:hover .product-item-image {
+                    transform: translateY(-104px);
+                    transition: all .9s;
+                    }
+                .product-items:hover .product-item-info {
+                        background-color: #fff;
+                      }
+                .product-items:hover .item-info-bio {
+                    opacity: 0.9;
+                    align-content: center;
+                    }
+
+            }
+        @media screen and (max-width: 460px) {
+            .products-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+                padding: 1rem;
+               }
+            }
+    }
+    
+    hr {
+        border-top: 3px solid rgb(162,210,255);
+        height: 2px;
+        max-width: 100%;
+        margin: 1em;  
+    }
+    @media screen and (max-width: 460px) {
+        hr {
+            border-top: 4px solid rgb(76, 167, 251);
+            height: 2px;
+            margin: 1em;
+          }
+        }
+
+    /* fomato de OUTLET*/
+    .outle {  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 1rem;
+    }
+    @media screen and (max-width: 460px) {
+        .outlet {
+            width: 440px;
+          }
+        }
+
+
+
+    .carouselIndicatorsOutlet {
+        .carousel-inner {
+            padding: 1 rem;
+            .carousel-item {
+                .card:hover {
+                    box-shadow: 5px 5px 20px rgba(0,0, 0, 0.4);
+                    transform: translatey(-3%);
+                  }
+                .card {
+                    width: 350px;
+                    padding: 1rem;
+                    border-radius: 6px;
+                    overflow: hidden;
+                    box-shadow: 0px 1px 10px rgba(0,0, 0, 0.2);
+                    cursor: default;
+                    transition: all 400ms ease;
+                    margin-bottom: 15px;
+                    font-size: 12px;
+                    text-align: justify;
+                    .img.wrapper {
+                        max-width: 100%;
+                        height: 65vw;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                    }
+                    .card-body {
+                        padding: 15px;
+                        text-align: center;
+                        font-family:'Ubuntu', sans-serif;
+                        margin-bottom: 15px;
+                        font-size: 12px;
+                        text-align: justify;
+                        .card-title {
+                            margin-bottom: 15px;
+                            font-size: 12px;
+                            text-align: justify;
+                        }
+                        .card-othertitle{
+                            margin-bottom: 15px;
+                            font-size: 12px;
+                            text-align: justify;    
+                        }
+                        .c-text {
+                            line-height: 1.5;
+                            color: black;
+                            margin-bottom: 15px;
+                            font-size: 12px;
+                            text-align: justify;
+                        }
+                    }
+                }
+                @media screen and (max-width: 460px) {
+                    .card{
+                        width: 350px;
+                        justify-self: center;
+                        margin: 3rem;
+                      }
+                    }
+            }
+        }    
+    }
+
+
+    .infotienda{
+        h3 {
+            text-align: center;
+            font-size: 12.5px;
+            font-family:'Ubuntu', sans-serif;
+            padding: 0px;
+        }
+        #infot {
+            text-align: center;
+            font-size: 12.5px;
+            font-family:'Ubuntu', sans-serif;
+            padding: 0px;
+        }
+        p {
+            text-align: center;
+            font-size: 12.5px;
+            font-family: 'Ubuntu', sans-serif;
+            padding: 0px;
+            text-align: justify;
+            margin: 1rem;
+        }
+
+    }
+}
+
+footer {
+    .footer-column {
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        div {
+            #titulo {
+            display:flex;
+            text-transform: uppercase;
+            font-size: 12px;
+            font-family: 'Ubuntu', sans-serif;
+            text-align: justify;
+            }
+        }
+        .opciones {
+            list-style: none;
+            align-items:normal;
+            text-transform:initial;
+            .listas{
+                list-style: none;
+                align-items:normal;
+                text-transform:initial;
+                li {
+                    .link-1{
+                        text-shadow: -2px -2px 10px #fff,
+                        2px 2px 10px #fff,
+                        0 0 20px #C63D2F,
+                        0 0 40px #C63D2F,
+                        0 0 60px #C63D2F,
+                        0 0 80px #C63D2F,
+                        0 0 100px #C63D2F;
+                        box-shadow: 0 0 5px #fff,
+                        inset 0 0 5px #fff,
+                        0 0 20px #08f,
+                        inset 0 0 20px #08f,
+                        0 0 40px #08f,
+                        inset 0 0 40px #08f;
+                        a{
+                            text-decoration: none;
+                            span {
+                                font-size: 12px;
+                                font-family: 'Ubuntu', sans-serif;
+                            }
+                         }
+                        }
+                    }
+            }
+        }
+    .redes {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        .medios{ 
+            width: 90%;
+            margin: 1rem;
+            }
+        @media screen and (max-width: 460px) {
+            .medios  {
+                    width: 90%;
+                    margin: 1rem;
+                  }
+            }
+        div {
+            #redes {
+                text-align: right;
+                font-size: 12px;
+                font-family: 'Ubuntu', sans-serif;
+                }
+            a {
+                .faceb {
+                    width: $icoredes;
+                    height: $icoredes;
+                    }
+                .natura-1 {
+                    width: 34px;
+                    height: 34px;
+                    }
+                .gotrendier {
+                    width: $icoredes;
+                    height: $icoredes;
+                    }
+                .insta{
+                    width: $icoredes;
+                    height: $icoredes;
+                    }
+                }
+            }
+        }
+    section {
+        .derechos {
+            letter-spacing: 1.2px;
+            text-align: center;
+            font-size: 10.5px;
+            font-family: 'Ubuntu', sans-serif;
+            }
+        }
+    @media screen and (max-width: 460px) {
+        .redes {
+            display: grid;
+            gap: 8px;
+            margin: 1rem;
+            }
+        .derechos{
+            font-size: 8px;
+            }
+        }
+    
+    }
+    @media screen and (max-width: 460px) {
+        .footer-column{
+            display: grid;
+            margin: 1rem;
+          }
+        }
+
+
+}
+
+/*page moda_dama*/
+
+@import "moda-dama";
+
+/*page conversemos*/
+
+@import "conversemos";
+
+/*page gtallas*/
+
+@import "gtallas";
